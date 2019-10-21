@@ -1,0 +1,158 @@
+.body > .chapter {
+    color: red;
+}
+
+.loader {
+    border-left: 16px solid yellow;
+    border-right: 16px solid green; 
+    border-top: 16px solid blue;
+    border-bottom: 16px solid red; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.colorPtags p {
+    color: blue;
+}
+
+.spaceTag .spaceTag2 + .spaceTag2{
+    background: green;
+}
+
+.pseudoSelect > ul:hover {
+    color: brown;
+}
+
+.mediaQuerie {
+    color: blueviolet;
+}
+
+#footer{
+    height: 5vh;
+    width: 100vw;
+    color: purple;
+}
+
+.flex-box-justify-content{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-box-align-items{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 40px;
+}
+
+.flex-box-flex-wrap{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+.randomBox{
+    height: 100%;
+    width: 80%;
+    background: green;
+}
+.randomBox2{
+    height: 100%;
+    width: 80%;
+    background: red;
+}
+
+.flex-box-flex-direction{
+    display: flex;
+    flex-direction: column;
+}
+
+li:hover {
+    color: blue;
+}
+
+input {
+    box-shadow: 8px 8px 8px 8px grey;
+}
+.transition >input{
+    background: #ffff00;
+    transition: ease-in-out,  .35s ease-in-out;
+}
+
+.transition >input:focus{
+    width: 50%;
+}
+
+.disabled >input:disabled {
+    background: lightblue;
+}
+
+.text-effects > input{
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+}
+
+.nth-child > p:nth-child(odd){
+    color: saddlebrown;
+}
+
+.linear-gradients{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(blue, red);
+}
+
+.left-right-gradients{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to right, purple, green);
+}
+
+.diagonal-gradients{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to bottom left, yellow, black);
+}
+
+.word-wrap {
+    height: 40px;
+    width: 50px;
+    word-wrap: break-word;
+    word-break: keep-all;
+    writing-mode: vertical-rl;
+}
+
+@media (max-width: 800px) {
+    .mediaQuerie {
+      color: green;
+    }
+    .flex-box-justify-content{
+        display: flex;
+        justify-content: space-around;
+    }
+    .flex-box-align-items{
+        display: flex;
+        align-items: flex-end; 
+    }
+    
+    .flex-box-flex-wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .flex-box-flex-direction{
+        display: flex;
+        flex-direction: row-reverse;
+    } 
+
+       
+}
